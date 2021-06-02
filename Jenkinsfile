@@ -21,9 +21,7 @@ pipeline {
     post{
     always{
         emailext body: 'notify', subject: 'smart', to: 'ajaydevops26@gmail.com'
-        build quietPeriod: 1, job: 'car'
     }
  } 
    
- } 
 }
